@@ -1,8 +1,10 @@
-<h1>
-  <%= @player&.name%>
-</h1>
-<h2>
-  תופס
-</h2>
+<div class="d-flex flex-column justify-content-center" style="height:100vh">
+  <h1 class="text-center display-1 fw-bold">
+    <%= @player&.name%>
+  </h1>
+  <h2 class="text-center mt-1 mb-5">
+    תופס
+  </h2>
 
-<%= link_to 'יש תופס חדש?', new_it_path %>
+  <%= link_to 'יש תופס חדש?', new_it_path, class: "text-center d-block my-5" %>
+</div>
